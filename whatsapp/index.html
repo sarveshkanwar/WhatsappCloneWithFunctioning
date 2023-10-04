@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/391827d54c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Whatsapp Clone</title>
+  
+
+</head>
+<body>
+  <div class="background-green"></div>
+
+
+  <div class="main-container">
+    <div class="left-container">
+
+<!--header -->      
+      <div class="header">
+        <div class="user-img">
+          <img class="dp" src="https://image1.masterfile.com/getImage/NjMwLTAxMjk2ODg2ZW4uMDAwMDAwMDA=AB7rA3/630-01296886en_Masterfile.jpg" alt="">
+        </div>
+        <div class="nav-icons">
+          <li><i class="fa-solid fa-users"></i></li>
+          <li><i class="fa-solid fa-message">
+ </i></li>
+          <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+        </div>
+      </div>
+
+
+ <!-- notification   -->
+      <div class="notif-box">
+        <i class="fa-solid fa-bell-slash"></i>
+        <div class="notif-text">
+             <p>Get Notified of New Messages</p>
+             <a href="#">Turn on Desktop Notifications ›</a>
+            </div>
+        <i class="fa-solid fa-xmark"></i>
+      </div> 
+<!-- 
+search-container  -->
+      <div class="search-container">
+        <div class="input">
+<i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search or start new chat   "></div>
+     <i class="fa-sharp fa-solid fa-bars-filter"></i>
+      </div>
+
+
+<!--chats -->
+      <div class="chat-list">
+        <div class="chat-box">
+          <div class="img-box">
+            <img class="img-cover" src="https://i.pinimg.com/originals/3a/db/f1/3adbf1ef7c4d02edf08d27765d6b5704.jpg" alt="">
+          </div>
+          <div class="chat-details">
+            <div class="text-head">
+              <h4>Aman</h4>
+              <p class="time unread">11:49</p>
+            </div>
+            <div class="text-message">
+              <p>“How are you?”</p>
+              <b>1</b>
+            </div>
+          </div>
+        </div>
+        <div class="chat-box">
+          <div class="img-box">
+            <img class="img-cover" src="data:image/jpeg;base64,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" alt="">
+          </div>
+          <div class="chat-details">
+            <div class="text-head">
+              <h4>Angad Sharma</h4>
+              <p class="time unread">10:49</p>
+            </div>
+            <div class="text-message">
+              <p>“I’ll be there.”</p>
+              <b>4</b>
+            </div>
+          </div>
+        </div>
+        <div class="chat-box">
+          <div class="img-box">
+            <img class="img-cover" src="https://images.pexels.com/photos/8367221/pexels-photo-8367221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+          </div>
+          <div class="chat-details">
+            <div class="text-head">
+              <h4>Noor</h4>
+              <p class="time unread">09:49</p>
+            </div>
+            <div class="text-message">
+              <p>“Make somebody’s day.”</p>
+              <b>2</b>
+            </div>
+          </div>
+        </div>
+        <div class="chat-box">
+          <div class="img-box">
+            <img class="img-cover" src="https://i.pinimg.com/236x/53/b3/f6/53b3f6ed2465eccaf7460c6afa57eeb2.jpg" alt="">
+          </div>
+          <div class="chat-details">
+            <div class="text-head">
+              <h4>Parvati</h4>
+              <p class="time">08:49</p>
+            </div>
+            <div class="text-message">
+              <p>“Dreams come true.”</p>
+            </div>
+          </div>
+        </div>
+        <div class="chat-box active">
+          <div class="img-box">
+            <img class="img-cover" src="https://us.123rf.com/450wm/rawpixel/rawpixel1703/rawpixel170319203/73819676-men-adult-serious-expression-studio.jpg?ver=6" alt="">
+          </div>
+          <div class="chat-details">
+            <div class="text-head">
+              <h4>Shiv</h4>
+              <p class="time">07:49</p>
+            </div>
+            <div class="text-message">
+              <p>Awesome! I'll start a vid..</p>
+            </div>
+          </div>
+        </div>
+        <div class="chat-box">
+          <div class="img-box">
+            <img class="img-cover" src="https://images.pexels.com/photos/3564412/pexels-photo-3564412.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+          </div>
+          <div class="chat-details">
+            <div class="text-head">
+              <h4>Azariah</h4>
+              <p class="time">06:49</p>
+            </div>
+            <div class="text-message">
+              <p>“Love, light, laughter.”</p>
+            </div>
+          </div>
+        </div>
+        <div class="chat-box">
+          <div class="img-box">
+            <img class="img-cover" src="https://images.pexels.com/photos/2919367/pexels-photo-2919367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+          </div>
+          <div class="chat-details">
+            <div class="text-head">
+              <h4>Kamlesh</h4>
+              <p class="time unread">Yesterday</p>
+            </div>
+            <div class="text-message">
+              <p>“Appreciate the mome..”</p>
+              <b>2</b>
+            </div>
+          </div>
+        </div>
+        <div class="chat-box">
+          <div class="img-box">
+            <img class="img-cover" src="https://images.pexels.com/photos/14526673/pexels-photo-14526673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+          </div>
+          <div class="chat-details">
+            <div class="text-head">
+              <h4>Jaslin</h4>
+              <p class="time">Yesterday</p>
+            </div>
+            <div class="text-message">
+              <p>“Now or never.”</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+    <div class="right-container">
+<!--header -->
+      <div class="header">
+        <div class="img-text">
+          <div class="user-img">
+          <img class="dp" src="https://images.pexels.com/photos/2474307/pexels-photo-2474307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        </div>
+          <h4>Raman Kumar<br><span>Online</span></h4>
+        </div>
+        <div class="nav-icons">
+          <li><i class="fa-solid fa-magnifying-glass"></i></li>
+          <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+        </div>
+      </div>
+
+<!--chat-container -->
+      <div class="chat-container">
+        <div class="message-box my-message">
+          <p>I've been waiting to see that show asap!<br><span>07:43</span></p>
+          
+
+        </div>
+        <div class="message-box friend-message">
+          <p>Ahh, I can't believe you do too!<br><span>07:45</span></p>
+          
+
+        </div>
+        <div class="message-box friend-message">
+          <p>The trailer looks good<br><span>07:45</span></p>
+          
+
+        </div>
+        <div class="message-box friend-message">
+          <p>I've been waiting to watch it!!<br><span>07:45</span></p>
+          
+
+        </div>
+        <div class="message-box my-message">
+          <p>😐😐😐<br><span>07:46</span></p>
+         
+
+        </div>
+        <div class="message-box my-message">
+          <p>Mee too! 😊<br><span>07:46</span></p>
+          
+
+        </div>
+      <div class="message-box friend-message">
+          <p>We should video chat to discuss, if you're up for it!<br><span>07:48</span></p>
+        
+
+        </div>
+        <div class="message-box my-message">
+          <p>Sure<br><span>07:48</span></p>
+          
+
+        </div>
+        <div class="message-box my-message">
+          <p>I'm free now!<br><span>07:48</span></p>
+          
+        </div>
+      <div class="message-box friend-message">
+          <p>Awesome! I'll start a video chat with you in a few.<br><span>07:49</span></p>
+        
+
+        </div>
+      </div>
+
+<!--input-bottom -->
+      <div class="chatbox-input">
+        <i class="fa-regular fa-face-grin"></i>
+        <i class="fa-sharp fa-solid fa-paperclip"></i>
+        <input type="text" placeholder="Type a message">
+        <i class="fas fa-paper-plane"></i>
+        <i class="fa-solid fa-microphone"></i>
+        
+      </div>
+    </div>
+  <!--adding send and del -->
+  <!-- Right Container -->
+
+
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+  
+
+  </div>
+</body>
+</html>
